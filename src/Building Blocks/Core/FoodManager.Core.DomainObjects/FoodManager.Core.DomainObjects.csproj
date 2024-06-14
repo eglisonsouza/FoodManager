@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Building Blocks\Core\FoodManager.Core.DomainObjects\FoodManager.Core.DomainObjects.csproj" />
-  </ItemGroup>
-
 </Project>
