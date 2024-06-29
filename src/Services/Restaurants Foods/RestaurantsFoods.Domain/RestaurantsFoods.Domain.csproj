@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Building Blocks\Core\FoodManager.Core.Data\FoodManager.Core.Data.csproj" />
     <ProjectReference Include="..\..\..\Building Blocks\Core\FoodManager.Core.DomainObjects\FoodManager.Core.DomainObjects.csproj" />
+    <ProjectReference Include="..\..\..\Building Blocks\Core\FoodManager.Core.Mediator\FoodManager.Core.Mediator.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,10 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\Building Blocks\Core\FoodManager.Core.Mediator\FoodManager.Core.Mediator.csproj" />
+    <ProjectReference Include="..\RestaurantsFoods.Application\RestaurantsFoods.Application.csproj" />
     <ProjectReference Include="..\RestaurantsFoods.Infra\RestaurantsFoods.Infra.csproj" />
   </ItemGroup>
 

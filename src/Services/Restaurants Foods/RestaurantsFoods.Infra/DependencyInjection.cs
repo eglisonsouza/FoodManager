@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RestaurantsFoods.Domain.Repositories;
 using RestaurantsFoods.Infra.Persistence;
+using RestaurantsFoods.Infra.Persistence.Repositories;
 
 namespace RestaurantsFoods.Infra
 {
@@ -13,6 +15,8 @@ namespace RestaurantsFoods.Infra
                 options.UseSqlServer(
                     configuration.GetConnectionString("RestaurantsFoodsContext"),
                     b => b.MigrationsAssembly(typeof(RestaurantsFoodsContext).Assembly.FullName)));
+
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             return services;
         }

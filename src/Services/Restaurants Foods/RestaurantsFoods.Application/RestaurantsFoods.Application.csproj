@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Building Blocks\Core\FoodManager.Core.Mediator\FoodManager.Core.Mediator.csproj" />
+    <ProjectReference Include="..\RestaurantsFoods.Domain\RestaurantsFoods.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
